@@ -16,7 +16,7 @@ class Engineer
 
   def clients
     Artist.all.select do |client|
-      client.name
+      client.engineer == self 
     end
   end
 
